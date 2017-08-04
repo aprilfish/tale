@@ -45,7 +45,7 @@ public class AttachController extends BaseController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AttachController.class);
 
-    public static final String CLASSPATH = AttachController.class.getClassLoader().getResource("").getPath();
+    public static final String CLASSPATH = AttachController.class.getResource("/").getPath();
 
     @Inject
     private AttachService attachService;
